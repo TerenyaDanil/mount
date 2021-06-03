@@ -1656,11 +1656,12 @@ body._lock {
   }
 
   .tarif__bg {
-    top: -360px;
+    top: -160px;
   }
 
   .tarif__bg img {
-    height: 3600px;
+    max-height: none;
+    height: 450rem;
   }
 
   .wrap-tarif__left {
