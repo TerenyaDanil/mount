@@ -1,7 +1,8 @@
 var swiper = new Swiper('.rev__slider', {
+	autoHeight: true,
 	loop: true,
+	spaceBetween: 1000,
 	grabCursor: true,
-	effect: "fade",
 	simulateTouch: true,
 	centeredSlides: true,
 	slidesPerView: 1,
@@ -51,7 +52,20 @@ courseInner = document.querySelector('.inner-course__dop');
 
 more.onclick = function () {
 	courseInner.classList.toggle('active');
-	more.hidden = true;
+	more.classList.toggle('hide');
+
+}
+////////////////////
+
+
+moreQus = document.querySelector('.qus__btn');
+qusInner = document.querySelector('.qus__inner-hide');
+
+
+
+moreQus.onclick = function () {
+	qusInner.classList.toggle('active');
+	moreQus.classList.toggle('hide');
 
 }
 
